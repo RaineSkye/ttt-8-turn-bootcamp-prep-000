@@ -16,13 +16,6 @@ def valid_move?(board, index)
       true
     end
   end
-
-def position_taken(board, index)
-  board[index] != " "
-end
-
-def move(board, index, current_player = "X")
-  board[index] = current_player
 end
 
 def turn(board)
@@ -35,4 +28,12 @@ def turn(board)
   else
     turn(board)
   end
+end
+
+def position_taken(board, index)
+  board[index] != " "
+end
+
+def move(board, index, current_player = "X")
+  board[index] = current_player
 end
