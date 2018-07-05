@@ -29,19 +29,9 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index = user_input-1
-  if valid 
+  if valid
     true
   else
     puts "Please enter a valid entry (1-9):"
   end
 end
-
-  
-
-
-
-
-
-
-
-
